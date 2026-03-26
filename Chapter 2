@@ -7,3 +7,34 @@ import "fmt"
 func main(){
     fmt.Println("1+1=", 1+1)
 }
+
+
+// This is chapter 2 of golang programming
+// We learn about numbers
+// Let's learn strings
+
+package main
+
+import "fmt"
+func main(){
+    fmt.Println(len("Hello, World"))
+    fmt.Println("Hello, World[1]")
+    fmt.Println("Hello" + "World")
+}
+
+// Let's learn booleans
+
+// && and
+// || or
+// ! not
+
+package main
+
+import "fmt"
+func main(){
+ fmt.Println(true && true)
+ fmt.Println(true && false)
+ fmt.Println(true || true)
+ fmt.Println(true || false)
+ fmt.Println(!true)
+}
