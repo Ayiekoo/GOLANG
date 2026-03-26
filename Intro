@@ -1,0 +1,11 @@
+// The two forward slashes are used to create comments.
+/* This is also another way of creating comments.*/
+
+// Below is package declaration.
+// Every Go program begins with a package declaration.
+package main
+// New lines, spaces and tabs are known as whitespaces because they cant be seen
+import "fmt"  // import format
+func main(){
+    fmt.Println("My name is Alex")
+}
