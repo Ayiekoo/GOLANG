@@ -1,1 +1,33 @@
 
+package main
+
+import "fmt"
+func main(){
+var x string = "Hello, Golang"
+fmt.Println(x)
+}
+
+
+//  Variables in Go are created by first using the var keyword, then specifying the variable name (x) and the type (string), and finally, assigning a value to the variable
+
+package main
+
+import "fmt"
+func main(){
+var x string
+x = "This is Golang"
+fmt.Println(x)
+}
+
+
+package main
+
+import "fmt"
+func main(){
+var x string
+x = "Alexander"
+fmt.Println(x)
+x = "The Great"
+fmt.Println(x)
+}
+
