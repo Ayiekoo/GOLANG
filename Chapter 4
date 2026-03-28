@@ -1,1 +1,115 @@
+// The for statement allows us to repeat a list of statements (blocks) multiple times
 
+package main
+
+import "fmt"
+
+func main() {
+    i := 1
+    for 1 <=10{
+        fmt.Println(i)
+        i=1+1
+    }
+}
+
+
+// The code below prints 1 to 10
+package main
+
+import "fmt"
+
+func main() {
+    for i := 1; i <=10; i++{
+        fmt.Println(i)
+    }
+}
+
+// The if statement
+
+// This statement prints odd and even numbers between 1 to 10
+
+package main
+import "fmt"
+
+func main() {
+    for i := 1; i <= 10; i++ {
+        if i % 2 == 0 {
+            fmt.Println(i, "even")
+        } else {
+            fmt.Println(i, "odd")
+        }
+    }
+}
+
+// This statement prints odd and even numbers between 1 to 30
+
+package main
+import "fmt"
+
+func main() {
+    for i := 1; i <= 30; i++ {
+        if i % 2 == 0 {
+            fmt.Println(i, "even")
+        } else {
+            fmt.Println(i, "odd")
+        }
+    }
+}
+
+// What does the following program print?
+
+package main
+
+import "fmt"
+
+i := 10
+if i > 10 {
+    fmt.Println("Big")
+} else {
+    fmt.Println("Small")
+}
+
+
+// Exercises
+
+// Write a program that prints out all the numbers between 1 and 100 that are evenly divisible by 3 (i.e., 3, 6, 9, etc.).
+
+
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Numbers between 1 and 100 evenly divisible by 3:")
+    
+    // Loop from 1 up to and including 100
+    for i := 1; i <=100; i++ {
+        // Check of the numbers are divisible by 3
+        if i % 3 == 0 {
+            // Print numbers divisible by 3
+            fmt.Println(i)
+        }
+    }
+}
+
+// Exercises
+
+// Write a program that prints the numbers from 1 to 100, but for multiples of three, print “Fizz” instead of the number, and for the multiples of five, print “Buzz.” For numbers that are multiples of both three and five, print “FizzBuzz
+
+package main
+
+import "fmt"
+
+func main () {
+    for i := 1; i <= 100; i ++ {
+        if i % 3 == 0 && 1 % 5 == 0 {
+            fmt.Println("FizzBuzz")
+        } else if i % 3 == 0 {
+            fmt.Println("Fizz")
+        } else if i % 5 == 0 {
+            fmt.Println("Buzz")
+        } else {
+            fmt.Println(i)
+        }
+    }
+}
