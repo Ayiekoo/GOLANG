@@ -1,0 +1,96 @@
+package main
+import "fmt"
+
+func main() {
+  xs := []float64{98, 93, 77, 82, 83} // List of scores is named "xs"
+  total := 0.0
+  for _, v := range xs {
+      total += v
+  }
+  fmt.Println(total / float64(len(xs)))
+}
+
+// Functions
+
+// So far, we have used the function "func main()"
+
+// In chapter 5, we used the function below
+
+// package main
+// import "fmt"
+
+//func main() {
+//  xs := []float64{98, 93, 77, 82, 83} // List of scores is named "xs"
+//  total := 0.0
+//  for _, v := range xs {
+//      total += v
+//  }
+//  fmt.Println(total / float64(len(xs)))
+// }
+
+// After the parameters, we put the return type. Collectively, the parameters and the return type are known as the function’s signature.
+// We have the function body, which is a series of statements between curly braces. 
+
+// Let's deploy the average function on our code
+
+
+// package main
+
+// import "fmt"
+
+func average(xs []float64) float64{
+    total := 0.0
+    for _, v := range xs {
+        total += v
+    }
+    return total / float64(len(xs))
+} 
+
+// We changed the fmt.Println to be a return instead.
+
+// The return statement causes the function to immediately stop and return the value after it to the function that called this one
+// Modify main to look like this:
+
+func main() {
+    xs := []float64 {98, 93, 77, 82, 83}
+    fmt.Println(average(xs)) // THIS CODE PRODUCES A SIMILAR RESULT AS THE PREVIOUS ONE
+}
+
+
+// PARAMETER NAMES CAN BE DIFFERENT
+
+// The calling and callee functions are allowed to use different names for the parameter
+
+// See the example below:
+
+func main() {
+    some0therName := []float64 {98, 92, 77, 82, 83}
+    fmt.Println(average(some0therName))
+} // code works equally fine
+
+
+// VARIABLES MUST BE PASSED TO FUNCTIONS
+
+// See this program
+
+func f(x int) {
+    fmt.Println(x)
+}
+
+func main() {
+    x := 5
+    f(x)
+}
+
+// AN ALTERNATIVE PROGRAM IS AS BELOW
+
+var x int = 5
+func f() {
+    fmt.Println(x)
+}
+func main() {
+    f()
+}
+
+// FUNCTIONS ARE BUILT TO CALL A STACK
+
